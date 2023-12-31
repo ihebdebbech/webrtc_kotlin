@@ -1,8 +1,8 @@
 const http = require("http")
 const Socket = require("websocket").server
 const server = http.createServer(()=>{})
-
-server.listen(4000,()=>{
+const port = process.env.SERVERPORT;
+server.listen(port,()=>{
     
 })
 
